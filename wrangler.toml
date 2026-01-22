@@ -1,4 +1,4 @@
-name = "dasbor-smart-groq"
+name = "dasborsmart"
 main = "worker.js"
 compatibility_date = "2024-05-01"
 

@@ -54,6 +54,12 @@ export default {
 
         // Serve static assets
         try {
+            if (url.pathname === '/') {
+                const newUrl = new URL(url);
+                newUrl.pathname = '/index.html';
+                const newRequest = new Request(newUrl, request);
+                return await env.ASSETS.fetch(newRequest);
+            }
             return await env.ASSETS.fetch(request);
         } catch (e) {
             const pathname = url.pathname;

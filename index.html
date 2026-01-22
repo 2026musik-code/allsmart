@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASBOR SMART - Groq AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="api-key-screen">
+        <div class="api-key-container">
+            <h1>DASBOR SMART</h1>
+            <p>Masukkan API Key Groq Anda untuk memulai</p>
+            <input type="password" id="api-key-input" placeholder="Masukkan API Key Anda">
+            <button id="save-api-key">Simpan & Mulai</button>
+        </div>
+    </div>
+
+    <div id="chat-screen" style="display: none;">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>DASBOR SMART</h1>
+                <span>Powered by Groq AI</span>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Ketik pesan Anda...">
+                <button id="send-button">Kirim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
